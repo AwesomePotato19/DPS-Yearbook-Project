@@ -1,0 +1,171 @@
+/* Global */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+::selection{
+    background: #fff;
+    color: #0a3453;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../Images/background-2.jpg);
+    /* background: url(../Images/background-2.jpg); */
+    background-size: cover;
+    font-family:'Segoe UI', sans-serif;
+    font-size: 20px;
+    color: #fff;
+}
+
+@font-face {
+    font-family: Header;
+    src:url(../Font/ArchitectsDaughter-Regular.ttf);
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Header;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+img{
+    width: 300px;
+    margin: 0 1em 1em 1em;
+}
+
+h3{
+    font-size: 1.4em;
+}
+
+h5{
+    font-size: 1.2em;
+}
+
+.default-font{
+    font-family:'Segoe UI', sans-serif;
+    text-decoration: underline;
+    margin: 20px;
+}
+
+a{
+    position: fixed;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1em 2em;
+}
+
+svg.back{
+    width: calc(2em + 20px);
+    fill: rgba(255, 255, 255);
+    float: left;
+    transition: all 200ms ease-in-out;
+    padding: 10px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 50%;
+}
+
+a:hover svg{
+    fill: hsl(0, 0%, 60%);
+    background-color: hsla(0, 0%, 0%, 0.75);
+}
+
+/* Header */
+header>.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: hsla(0, 0%, 0%, 0.5);
+}
+
+header h1{
+    flex-grow: 1;
+    text-align: center;
+    margin: auto 0;
+}
+
+/* Text */
+.quote{
+    text-align: center;
+    color: gold;
+    font-size: 1.25em;
+}
+
+p{
+    margin: 20px;
+}
+
+.gallery{
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.float-left{
+    margin: 2em 1em;
+    float: left;
+}
+
+.float-right{
+    margin: 2em 1em;
+    float: right;
+}
+
+.cc{
+    width: auto;
+    height: 250px;
+}
+
+.ed2{
+    width: 400px;
+}
+
+.ovo1{
+    width: 50%;
+    margin-inline: 25%;
+}
+
+.dn{
+    width: 50%;
+    margin-inline: 25%;
+    margin-top: 1em;
+}
+
+.link{
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(79, 222, 203);
+    transition: 200ms;
+}
+
+.link:hover{
+    color:hsl(172, 68%, 39%);
+}
+
+/* Footer */
+footer{
+    clear: both;
+    margin-top: 50px;
+    text-align: center;
+    background: hsla(0, 0%, 0%, 0.5);
+    padding: 10px 0;
+    font-size: 1rem;
+}
